@@ -4,11 +4,78 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
-    <div id="side-bar"></div>
+    <!-- Side bar -->
+    <div id="side-bar" >
+      <div id="logo-container" class="grid-horizontal">
+        <div id="logo">
+          <div id="logo-box1" class="logo-box"></div>
+          <div id="logo-box2" class="logo-box"></div>
+          <div id="logo-box3" class="logo-box"></div>
+          <div id="logo-box4" class="logo-box"></div>
+        </div>
+        <h2>Dashboard</h2>
+      </div>
+      <div class="grid-nav">
+        <div class="grid-horizontal">
+          <i class="fa-solid fa-house"></i>
+          <h3>Home</h3>
+        </div>
+        <div class="grid-horizontal">
+          <i class="fa-solid fa-address-card"></i>
+          <h3>Profile</h3>
+        </div>
+        <div class="grid-horizontal">
+          <i class="fa-solid fa-message"></i>
+          <h3>Messages</h3>
+        </div>
+        <div class="grid-horizontal">
+          <i class="fa-solid fa-clock-rotate-left"></i>
+          <h3>History</h3>
+        </div>
+        <div class="grid-horizontal">
+          <i class="fa-solid fa-list-check"></i>
+          <h3>Tasks</h3>
+        </div>
+        <div class="grid-horizontal">
+          <i class="fa-solid fa-users"></i>
+          <h3>Communities</h3>
+        </div>
+      </div>
+      <div class="grid-nav">
+        <div class="grid-horizontal">
+          <i class="fa-solid fa-gear"></i>
+          <h3>Settings</h3>
+        </div>
+        <div class="grid-horizontal">
+          <i class="fa-solid fa-circle-question"></i>
+          <h3>Support</h3>
+        </div>
+        <div class="grid-horizontal">
+          <i class="fa-solid fa-shop-lock"></i>
+          <h3>Privacy</h3>
+        </div>
+      </div>
+    </div>
+    <!-- Header -->
     <div id="header"></div>
+    <!-- Main -->
     <div id="main"></div>
   </body>
 </html>
